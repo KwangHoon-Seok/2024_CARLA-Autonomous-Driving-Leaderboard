@@ -1,0 +1,9 @@
+<launch>
+    <node name="localization_node" pkg="localization" type="localization_node" output="screen">
+        <param name="pos_var" value="0.0000001" />
+        <param name="yaw_var" value="1.0" />
+        <param name="meas_xy_var" value="2.0" />
+        <param name="meas_yaw_var" value="1.0" />
+    </node>
+</launch>
+s

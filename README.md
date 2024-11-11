@@ -3,6 +3,9 @@
 # CARLA 자율주행 리더보드
 
 [CARLA 자율주행 리더보드](https://leaderboard.carla.org/)는 CARLA 시뮬레이터를 활용해 자율주행 시스템을 평가하는 공개 플랫폼입니다. 이 리더보드는 자율주행 에이전트의 성능과 안전성을 평가하기 위한 표준화된 환경을 제공하여 복잡한 도시 시뮬레이션에서 다양한 알고리즘을 비교할 수 있도록 설계되었습니다.
+### Architecture
+<img width="607" alt="image" src="https://github.com/user-attachments/assets/1cbc46e6-2f68-4468-ae83-39ae63fc3ffd">
+
 
 ### 개요
 
@@ -41,5 +44,18 @@ GPS와 IMU를 통해 자차의 현재 위치 추종하는 module
 #### Camera detection
 Yolo v8 모델 사용 -> src 코드 사라짐 ...(추후 업데이트)
 
+## Result
+3D object detection & tracking 
+![image](https://github.com/user-attachments/assets/1bf0606f-3c6e-4367-896e-cf4741e41e82)
 
+Local planning 
+![image](https://github.com/user-attachments/assets/f00c80ba-9eb7-4913-b02c-30e0a351b001)
 
+Longitudinal Control
+![image](https://github.com/user-attachments/assets/23d21732-7367-42b1-b113-6bddff448102)
+
+Lateral Control
+![image](https://github.com/user-attachments/assets/785cfb11-9f31-455e-8da1-467b6cdfa17a)
+
+Lead vehicle select & ACC
+![image](https://github.com/user-attachments/assets/89afde37-b93a-489d-b113-76c2912e71da)

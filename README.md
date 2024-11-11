@@ -14,3 +14,32 @@ CARLA 리더보드는 연구자와 개발자가 자율주행 알고리즘을 통
 - **복잡한 시뮬레이션 시나리오**: 동적 교통 요소, 다양한 날씨 조건, 예측할 수 없는 보행자 행동 등이 포함된 다양한 도시 시나리오를 제공합니다.
 - **지속적인 평가**: 참가자들은 언제든지 모델을 제출하고 평가를 받을 수 있어, 방법론의 지속적인 개선 및 경쟁 비교가 가능합니다.
 - **평가 지표 및 점수 산정**: 주행 목표 달성 여부, 충돌 최소화, 주행의 부드러움 등을 기준으로 시스템을 평가합니다.
+
+## 알고리즘 소개
+
+#### Behavior_trajectory_planner
+각 경로에 따른 csv파일을 유연하게 처리하는 module
+
+#### Collision_check
+앞 차량과의 충돌 여부를 TTC 알고리즘을 통해 확인하는 module
+
+#### DWA_ros_node
+장애물 회피 시 작동하는 local planning module
+
+#### lead_vehicle_flag
+수 많은 장애물들 중에 ACC 알고리즘을 적용할 lead_vehicle을 찾는 module
+
+#### LiDAR_processing 
+LiDAR을 통해 object detection과 object tracking을 실행하는 module
+
+#### Localization 
+GPS와 IMU를 통해 자차의 현재 위치 추종하는 module
+
+#### Velocity Planner
+자차의 위치에 따라 reference velocity를 조절해주는 module
+
+#### Camera detection
+Yolo v8 모델 사용 -> src 코드 사라짐 ...(추후 업데이트)
+
+
+
